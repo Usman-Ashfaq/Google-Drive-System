@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-#include <ctime>
+#include <ctime>           // for showing local time
 #include <limits>
-#include <cstdlib>
+#include <cstdlib>          // for random generating
 using namespace std;
 
 // Utility function to get the current time

@@ -5,17 +5,17 @@
 #include <cstdlib>          // for random generating
 using namespace std;
 
-// Utility function to get the current time
+//  function to get the current time
 string getCurrentTime() {
     time_t now = time(0);
     tm localtm;
     localtime_s(&localtm, &now);
     char buffer[80];
-    strftime(buffer, 80, "%d-%m-%Y %H:%M:%S", &localtm);
+    strftime(buffer, 80, "%d-%m-%Y %H:%M:%S", &localtm);    //howing the local time
     return string(buffer);
 }
 
-// trree (BST)
+
 struct TreeNode {
     string name;
     bool isFile;
@@ -43,7 +43,7 @@ private:
         delete node;
     }
 
-    // function to find a node by name
+    //  to find a node by name
     TreeNode* findNode(TreeNode* node, const string& name) const {
         if (!node) return nullptr;
         if (node->name == name) return node;

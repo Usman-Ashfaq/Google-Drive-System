@@ -390,7 +390,7 @@ public:
     }
 
     void dequeue() {
-        // Remove the front node from the queue
+       
         if (!front) return;
         QueueNode* temp = front;
         front = front->next;
@@ -398,7 +398,7 @@ public:
         delete temp;
         count--;
     }
-
+//function to show fle details
     void display() const {
         if (!front) {
             cout << "No recent files\n";

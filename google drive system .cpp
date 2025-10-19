@@ -348,7 +348,7 @@ public:
     }
 };
 
-// Recent Files Queue
+// class to tell which  Files are recently open or closed , and these r stored in form of Queue
 class Recent_Files_Queue {
 private:
     struct QueueNode {
